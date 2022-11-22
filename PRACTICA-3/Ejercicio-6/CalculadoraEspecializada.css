@@ -55,10 +55,10 @@ input[type = "number"]{ /* a=0 ; b=1 ; c=1 -> Especificidad = 11 */
 }
 input[type="button"] /* a=0 ; b=1 ; c=1 -> Especificidad = 11 */
 {
-    background-color: rgb(93, 199, 155);
+    background-color: rgb(0, 128, 74);
     color: white;
-    width: 17.1%;
-    font-size: 32px;
+    width: 15%;
+    font-size: 120%;
 }
 input.actividad{ /* a=0 ; b=1 ; c=1 -> Especificidad = 11 */
     background-color: rgb(89, 136, 238);
@@ -67,12 +67,4 @@ input.actividad{ /* a=0 ; b=1 ; c=1 -> Especificidad = 11 */
 input.comida{ /* a=0 ; b=1 ; c=1 -> Especificidad = 11 */
     background-color: rgb(241, 85, 202);
     color: white;
-}
-/* a=0 ; b=1 ; c=1 -> Especificidad = 11 */
-input[value="1"], input[value="C"], input[value="2"], input[value="3"], input[value="4"], input[value="5"],  input[value="6"], input[value="7"], input[value="8"], input[value="9"],  input[value="0"], input[value="="], input[value="."]
-{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    width: 10%;
-    font-size: 36px;
 }
