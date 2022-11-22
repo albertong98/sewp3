@@ -1,0 +1,65 @@
+body { /* a=0 ; b=0 ; c=1 -> Especificidad = 1 */
+    color: black;
+    font-family: sans-serif;
+    background-color: rgb(238, 237, 237);
+    text-align: justify;
+}
+
+/* a=0 ; b=0 ; c=1 -> Especificidad = 1 */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+form{ /* a=0 ; b=0 ; c=1 -> Especificidad = 1 */
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    border: solid 1px grey;
+    padding-bottom: 10px;
+    margin: auto;
+    background: rgb(255, 246, 168);
+    border-radius: 15px;
+}
+h1 /* a=0 ; b=0 ; c=1 -> Especificidad = 1 */
+{
+    color: rgb(0, 0, 0);
+    background-color: rgb(215, 167, 255);
+    text-align: center;
+    font-size: 300%;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    padding: 50px 0;
+    border-radius: 20px;
+}
+input[type="text"] /* a=0 ; b=1 ; c=1 -> Especificidad = 11 */
+{
+    width: 36%;
+    padding: 16px 32px;
+    font-size: 36px;
+    margin: 10px 30%;
+    border: 5px solid grey;
+    border-radius: 1px;
+    text-align: center;
+    color: black;
+    background: rgb(93, 199, 155);
+
+
+}
+input[type="button"] /* a=0 ; b=1 ; c=1 -> Especificidad = 11 */
+{
+    background-color: rgb(93, 199, 155);
+    color: white;
+    width: 10%;
+    font-size: 36px;
+}
+/* a=0 ; b=1 ; c=1 -> Especificidad = 11 */
+input[value="1"],  input[value="2"], input[value="3"], input[value="4"], input[value="5"],  input[value="6"], input[value="7"], input[value="8"], input[value="9"],  input[value="0"], input[value="="], input[value="."]
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 10%;
+    font-size: 36px;
+}

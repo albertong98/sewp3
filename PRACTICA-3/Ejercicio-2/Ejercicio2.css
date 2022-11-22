@@ -1,0 +1,27 @@
+body { /* a = 0 ; b = 0 ; c = 1 -> Especifidad = 1*/
+    font: 400 15px Tahoma,sans-serif;
+    line-height: 1.8;
+    color: #000000;
+}
+h1,h2,h3,h4{ /* a = 0 ; b = 0 ; c = 1 -> Especifidad = 1*/
+    display: block;
+    font-weight: bold;
+}
+h1{ /* a = 0 ; b = 0 ; c = 1 -> Especifidad = 1*/
+    color: #F77B0E;
+    font-size: 2em; 
+}
+h2{ /* a = 0 ; b = 0 ; c = 1 -> Especifidad = 1*/
+    color: #81009E;
+    font-size: 1.5em;
+}
+h3{ /* a = 0 ; b = 0 ; c = 1 -> Especifidad = 1*/
+    color: #000E9E;
+    font-size: 1em;
+}
+h4{ /* a = 0 ; b = 0 ; c = 1 -> Especifidad = 1*/
+    font-size: 0.6em;
+}
+p{ /* a = 0 ; b = 0 ; c = 1 -> Especifidad = 1*/
+    color: #424042;
+}

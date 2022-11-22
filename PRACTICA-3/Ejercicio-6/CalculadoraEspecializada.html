@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Alberto Núñez García"/>
+    <meta name="description" content="Ejercicio 4 de la práctica ECMAScript; Software y Estándares para la Web"/>
+    <meta name="keywords" content="SEW,ejercicio4,Web"/>
+    <title>Ejercicio 4 Calculadora Especializada</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraEspecializada.css"/>
+    <script src="CalculadoraEspecializada.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora Especializada</h1>
+    </header>
+<main>
+    <form>
+        <p>
+            Balance de calorias:
+        </p>
+        <p>
+            <input type="text" id="resultado" value="0" disabled/>
+        </p>
+        <p>
+            <input type="text" id="pantalla" value="0" disabled/>
+        </p>
+        <p>
+            <input type="button"  value="25g" onclick="calculadora.setGramos(25)"/>
+            <input type="button"  value="50g" onclick="calculadora.setGramos(50)"/>
+            <input type="button"  value="75g" onclick="calculadora.setGramos(75)"/>
+            <input type="button"  value="100g" onclick="calculadora.setGramos(100)"/>
+            <input type="button"  value="150g" onclick="calculadora.setGramos(150)"/> 
+        </p>
+        <p>
+            <input type="button" class = "comida"  value="manzana" onclick="calculadora.addComida('manzana')"/> 
+            <input type="button" class = "comida"  value="arroz" onclick="calculadora.addComida('arroz')"/>
+            <input type="button" class = "comida" value="pasta" onclick="calculadora.addComida('pasta')"/>
+            <input type="button" class = "comida"  value="pollo" onclick="calculadora.addComida('pollo')"/>
+            <input type="button" class = "comida" value="jamon" onclick="calculator.anadirOperando('jamon')"/>
+        </p>
+        <p>
+            <input type="button" class = "comida"  value="lechuga" onclick="calculadora.addComida('manzana')"/>
+            <input type="button" class = "comida"  value="ternera" onclick="calculadora.addComida('ternera')"/>
+            <input type="button" class = "comida"  value="merluza" onclick="calculadora.addComida('merluza')"/>
+            <input type="button" class = "comida"  value="salmon" onclick="calculadora.addComida('salmon')"/>
+            <input type="button" class = "comida"  value="setas" onclick="calculadora.addComida('setas')"/>
+        </p>
+        <p>
+            <input type="button"  value="5 min" onclick="calculadora.setMinutos(5)"/>
+            <input type="button"  value="15 min" onclick="calculadora.setMinutos(15)"/>
+            <input type="button"  value="30 min" onclick="calculadora.setMinutos(30)"/>
+            <input type="button"  value="45 min" onclick ="calculadora.setMinutos(45)"/>
+            <input type="button"  value="1 h" onclick="calculadora.setMinutos(60)"/>
+        </p>
+        <p>
+            <input type="button" class = "actividad"  value="correr" onclick="calculadora.addActividad('correr')"/>
+            <input type="button" class = "actividad"  value="bici" onclick="calculadora.addActividad('bici')"/>
+            <input type="button" class = "actividad"  value="caminar" onclick="calculadora.addActividad('caminar')"/>
+            <input type="button" class = "actividad"  value="patinar" onclick = "calculadora.addActividad('patinar')"/>
+            <input type="button" class = "actividad"  value="nadar" onclick="calculadora.addActividad('nadar')"/>
+        </p>
+        <p>
+            <input type="button" class = "actividad"  value="baile" onclick="calculadora.addActividad('baile')"/>
+            <input type="button" class = "actividad"  value="escalada" onclick="calculadora.addActividad('escalada')"/>
+            <input type="button" class = "actividad"  value="futbol" onclick="calculadora.addActividad('futbol')"/>
+            <input type="button" class = "actividad"  value="tenis" onclick = "calculadora.addActividad('tenis')"/>
+            <input type="button" class = "actividad"  value="gimnasio" onclick="calculadora.addActividad('gimnasio')"/>
+        </p>
+        <p>
+            <input type="button"  value="Enter" onclick="calculadora.calcularBalance()"/>
+        </p>
+        <p>
+            Calcular IMC
+        </p>
+        <p>
+            <input id="peso" type="number" value="peso">
+            <input id="altura" type="number" value="altura">
+            <input type="button" value="Enviar" onclick="calculadora.calcularIMC()">
+        </p>
+        <p>IMC: <input type="text" id="imc" value="0" disabled></p>
+    </form>
+</main>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Alberto Núñez García"/>
+    <meta name="description" content="Ejercicio 4 de la práctica ECMAScript; Software y Estándares para la Web"/>
+    <meta name="keywords" content="SEW,ejercicio4,Web"/>
+    <title>Ejercicio 4 Calculadora RPN</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css"/>
+    <script src="CalculadoraRPN.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora RPN</h1>
+    </header>
+<main>
+    <form>
+        <p>
+            Resultado final:
+        </p>
+        <p>
+            <input type="text" id="resultado" value="0" disabled/>
+        </p>
+        <p>
+            <input type="text" id="pantalla" value="0" disabled/>
+        </p>
+        <p>
+            <input type="button"  value="sin" onclick="calculadora.seno('sin')"/>
+            <input type="button"  value="tan" onclick="calculadora.tangente('tan')"/>
+            <input type="button"  value="cos" onclick="calculadora.coseno('cos')"/>
+            <input type="button"  value="/" onclick="calculadora.anadirOperando('/')"/>
+            <input type="button"  value="x" onclick="calculadora.anadirOperando('*')"/> 
+        </p>
+        <p>
+            <input type="button"  value="9" onclick="calculadora.pantalla('9')"/>
+            <input type="button"  value="8" onclick="calculadora.pantalla('8')"/>
+            <input type="button"  value="7" onclick="calculadora.pantalla('7')"/>
+            <input type="button" value="π" onclick = "calculadora.pantalla('Math.PI')"/>
+            <input type="button"  value="Mod" onclick="calculadora.anadirOperando('%')"/>
+        </p>
+        <p>
+            <input type="button"  value="6" onclick="calculadora.pantalla('6')"/>
+            <input type="button"  value="5" onclick="calculadora.pantalla('5')"/>
+            <input type="button"  value="4" onclick="calculadora.pantalla('4')"/>
+            <input type="button"  value="-" onclick="calculadora.anadirOperando('-')"/>
+            <input type="button"  value="+" onclick="calculadora.anadirOperando('+')"/>
+        </p>
+        <p>
+            <input type="button"  value="3" onclick="calculadora.pantalla('3')"/>
+            <input type="button"  value="2" onclick="calculadora.pantalla('2')"/>
+            <input type="button"  value="1" onclick="calculadora.pantalla('1')"/>
+            <input type="button" value="x^y" onclick = "calculadora.anadirOperando('**')"/>
+            <input type="button" value="Exp" onclick="calculadora.exponencial()"/>
+        </p>
+        <p>
+            <input type="button"  value="." onclick="calculadora.pantalla('.')"/>
+            <input type="button"  value="0" onclick="calculadora.pantalla('0')"/>
+            <input type="button"  value="C" onclick="calculadora.limpiar()"/>
+            <input type="button" value="n!" onclick = "calculadora.calcularFactorial()"/>
+            <input type="button"  value="Enter" onclick="calculadora.enter()"/>
+        </p>
+    </form>
+</main>
+</body>
+</html>
